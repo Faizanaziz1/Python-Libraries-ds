@@ -1,0 +1,76 @@
+import numpy as np
+
+#creating list in numpy
+
+my_list = [1,2,3,4]
+
+print(my_list)
+
+#array
+
+array = np.array([1,2,3,4])
+
+array=array*2
+
+print(array)
+
+
+#multidemnsional arrays
+
+import numpy as np
+
+#zero dimensional
+
+array =np.array('A')
+
+print(array.ndim) #ndim stands for number of dimensions
+
+#one dimensional
+
+array = np.array(['A','B','C'])
+
+print(array.ndim)
+print(array.shape)
+
+#two dimensional
+
+array = np.array([['A','B','C'], 
+                 ['D','B','C'], 
+                 ['A','B','C']])
+
+print(array.ndim)
+print(array.shape)
+
+#three dimensional
+
+array = np.array([[['A','B','C'],['D','B','C'],['A','B','C']],
+                 [['A','B','C'],['D','B','C'],['A','B','C']],
+                 [['A','B','C'],['D','B','C'],['A','B','C']]])
+
+print(array.ndim) #array should have same seq
+
+print(array.shape) #layer,rows,columns
+
+
+#multidimensional indexing
+
+array = np.array([[['A','B','C'],['D','E','F'],['G','H','I']],
+                 [['J','K','L'],['M','N','O'],['P','Q','R']],
+                 [['S','T','U'],['V','W','X'],['Y','Z',' ']]])
+
+
+array=np.array([[1,2,3,4],
+                [5,6,7,8],
+                [9,10,11,12],
+                [13,14,15,16]])
+
+
+#array[start:end:step]
+
+# print(array[0:4:2]) 
+print(array[0:1,0:]) #rows , columns
+
+print(array[0,0,0])
+
+word = array[0,0,0]+array[2,0,0]+array[2,0,0]
+print(word)
